@@ -18,6 +18,10 @@
     - Alberto Giacometti
     </hint>
 	</enigma>
+  <enigma title="Série de 42">
+    <answer>Le 42 de la question</answer>
+    <hint>La question !</hint>
+  </enigma>
   <enigma title="Où est la réponse ?">
     <answer>là-bas</answer>
     <hint>je t'ai dis là-bas, enfin !</hint>
