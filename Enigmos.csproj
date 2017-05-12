@@ -111,6 +111,9 @@
     <Compile Include="Enigmas\CharadeEnigmaPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Enigmas\SerieDe42EnigmaPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Enigmas\TrouverEnigmaPanel.cs">
       <SubType>Component</SubType>
     </Compile>
