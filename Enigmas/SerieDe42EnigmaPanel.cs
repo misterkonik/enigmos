@@ -18,19 +18,21 @@ namespace Cpln.Enigmos.Enigmas
             lblQuestion = new Label();
             lblQuestion.Text = "Cliquez sur ";
             lblQuestion.Location = new System.Drawing.Point(0, 0);
-            lblQuestion.Width = 59;
-
+            lblQuestion.Width = 110;
+            lblQuestion.Font = new System.Drawing.Font(lblQuestion.Font.FontFamily,15);
 
             lblQuestionReponse = new Label();
             lblQuestionReponse.Text = "42";
-            lblQuestionReponse.Location = new System.Drawing.Point(56, 0);
-            lblQuestionReponse.Click += new EventHandler(LblQuestionReponse_Click);
+            lblQuestionReponse.Location = new System.Drawing.Point(105, 0);
+            lblQuestionReponse.Click += LblQuestionReponse_Click;
+            lblQuestionReponse.Font = new System.Drawing.Font(lblQuestionReponse.Font.FontFamily, 15);
 
             lblFausseReponse = new Label();
             lblFausseReponse.BackColor = System.Drawing.Color.Pink;
             lblFausseReponse.Width = 800;
             lblFausseReponse.Height = 500;
             lblFausseReponse.Location = new System.Drawing.Point(0, 56);
+            lblFausseReponse.Cursor = Cursors.Hand;
 
             for(int i = 0; i<20;i++)
             {
@@ -52,8 +54,6 @@ namespace Cpln.Enigmos.Enigmas
             string caption = "Réponse";
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             DialogResult result;
-
-            // Displays the MessageBox.
 
             result = MessageBox.Show(message, caption, buttons);
 
