@@ -10,8 +10,8 @@ namespace Cpln.Enigmos.Enigmas
    public class SerieDe42EnigmaPanel : EnigmaPanel
     {
         private Label lblQuestion;
-       private Label lblQuestionReponse;
-       private Label lblFausseReponse;
+        private Label lblQuestionReponse;
+        private Label lblFausseReponse;
 
         public SerieDe42EnigmaPanel()
         {
@@ -35,7 +35,6 @@ namespace Cpln.Enigmos.Enigmas
             Controls.Add(lblQuestionReponse);
             Controls.Add(lblFausseReponse);
         }
-
         private void LblQuestionReponse_Click(object sender, EventArgs e)
         {
             string message = "monarchie constitutionnelle";
@@ -45,7 +44,7 @@ namespace Cpln.Enigmos.Enigmas
 
             result = MessageBox.Show(message, caption, buttons);
 
-            if (result == System.Windows.Forms.DialogResult.OK){}
+            if (result == DialogResult.OK){}
 
         }
     }
